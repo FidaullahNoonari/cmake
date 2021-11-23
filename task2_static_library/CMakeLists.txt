@@ -11,7 +11,8 @@ add_executable(${PROJECT_NAME} main.cpp)
 
 target_include_directories(${PROJECT_NAME} PUBLIC ./include)
 
-include_directories(./lib/)
-# add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/lib/multdivide)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/lib/addsub)
+
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/lib/multdivide)
 
 target_link_libraries(${PROJECT_NAME} addsub multdivide)
